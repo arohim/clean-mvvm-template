@@ -39,7 +39,5 @@ class GithubRepositoryFactory {
                 url = randomUuid()
             )
         }
-
     }
-
 }

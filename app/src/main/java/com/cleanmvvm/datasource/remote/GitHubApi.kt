@@ -9,5 +9,4 @@ interface GitHubApi {
 
     @GET("search/repositories")
     fun getRepositories(@Query("q") q: String): Single<GithubRepositoryEntity>
-
 }

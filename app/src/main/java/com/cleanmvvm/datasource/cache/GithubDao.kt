@@ -4,7 +4,6 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.cleanmvvm.datasource.model.GithubRepositoriesEntity
 import com.cleanmvvm.datasource.model.GithubRepositoryEntity
 import io.reactivex.Single
 

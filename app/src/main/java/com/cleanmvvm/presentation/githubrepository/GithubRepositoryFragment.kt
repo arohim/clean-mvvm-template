@@ -1,11 +1,11 @@
 package com.cleanmvvm.presentation.githubrepository
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProviders
 import com.cleanmvvm.R
 
 class GithubRepositoryFragment : Fragment() {
@@ -17,7 +17,8 @@ class GithubRepositoryFragment : Fragment() {
     private lateinit var viewModel: GithubRepositoryViewModel
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_github_list, container, false)
@@ -28,5 +29,4 @@ class GithubRepositoryFragment : Fragment() {
         viewModel = ViewModelProviders.of(this).get(GithubRepositoryViewModel::class.java)
         // TODO: Use the ViewModel
     }
-
 }

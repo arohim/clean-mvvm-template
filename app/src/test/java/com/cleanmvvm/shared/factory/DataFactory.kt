@@ -18,7 +18,6 @@ class DataFactory {
             return ThreadLocalRandom.current().nextInt(0, 1000 + 1)
         }
 
-
         fun randomDouble(): Double {
             return ThreadLocalRandom.current().nextDouble(0.0, 1000.0 + 1)
         }

@@ -18,7 +18,6 @@ class GithubCacheDataSourceImpl constructor(
             }
     }
 
-
     override fun set(repos: List<GithubRepository>): Single<List<GithubRepository>> {
         return Single.create { emitter ->
             val entities = repos.map {
