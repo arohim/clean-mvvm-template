@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Clean MVVM+Architecture Com + Koin</string>
+    <string name="scroll_to_top">Scroll To Top</string>
 </resources>

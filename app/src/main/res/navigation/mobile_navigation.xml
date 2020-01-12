@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/navigation_download"
-        android:name="com.cleanmvvm.presentation.article.ArticleListFragment"
-        android:label="@string/article_list_title"
-        tools:layout="@layout/fragment_article_list">
+        android:name="com.cleanmvvm.presentation.githubrepository.GithubRepositoryFragment"
+        android:label="Github repositories"
+        tools:layout="@layout/fragment_github_list">
 
     </fragment>
 

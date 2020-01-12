@@ -17,7 +17,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_article" />
+            tools:listitem="@layout/item_github" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/floating_action_button"
@@ -26,7 +26,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:alpha="0.4"
-            android:contentDescription="@string/article_list_scroll_to_top"
+            android:contentDescription="@string/scroll_to_top"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
