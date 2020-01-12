@@ -12,7 +12,9 @@ class GithubRemoteDataSourceImpl constructor(
     override fun get(keyword: String): Single<List<GithubRepository>> {
         return api.getRepositories(keyword)
             .map {
-                it.items.map { it.mapToDomain() }
+                it.items.map {
+                    it.mapToDomain()
+                }
             }
     }
 }
