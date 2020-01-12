@@ -55,3 +55,18 @@ fun GithubRepositoryEntity.mapToDomain(): GithubRepository {
         url = url
     )
 }
+
+fun GithubRepository.mapToEntity(): GithubRepositoryEntity {
+    return GithubRepositoryEntity(
+        id = id,
+        name = name,
+        fullName = fullName,
+        score = score,
+        stargazersCount = stargazersCount,
+        description = description,
+        watchers = watchers,
+        language = language,
+        watchersCount = watchersCount,
+        url = url
+    )
+}

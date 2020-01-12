@@ -12,7 +12,7 @@ import io.reactivex.Single
 interface GithubDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insert(articles: List<GithubRepositoriesEntity>)
+    fun insert(articles: List<GithubRepositoryEntity>)
 
     @Query("SELECT * FROM Repository WHERE name LIKE :keyword or fullName LIKE :keyword ORDER BY stargazersCount DESC")
     fun searchRepositories(keyword: String): Single<List<GithubRepositoryEntity>>
