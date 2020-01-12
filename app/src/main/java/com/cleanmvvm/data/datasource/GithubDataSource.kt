@@ -12,5 +12,5 @@ interface GithubCacheDataSource {
 
 interface GithubRemoteDataSource {
 
-    fun get(keyword: String): Single<GithubRepository>
+    fun get(keyword: String): Single<List<GithubRepository>>
 }

@@ -1,7 +1,7 @@
 package com.cleanmvvm.di
 
 import com.cleanmvvm.BuildConfig
-import com.cleanmvvm.datasource.remote.GitHubApi
+import com.cleanmvvm.datasource.remote.GithubApi
 import com.cleanmvvm.network.createNetworkClient
 import org.koin.core.context.loadKoinModules
 import org.koin.core.module.Module
@@ -33,7 +33,7 @@ val repositoryModule: Module = module {
 }
 
 val networkModule: Module = module {
-    single { articlesApi }
+    single { GITHUB_API }
 }
 
 val useCaseModule: Module = module {
@@ -42,4 +42,4 @@ val useCaseModule: Module = module {
 
 private const val BASE_URL = "https://api.github.com/"
 private val retrofit: Retrofit = createNetworkClient(BASE_URL, BuildConfig.DEBUG)
-private val articlesApi: GitHubApi = retrofit.create(GitHubApi::class.java)
+private val GITHUB_API: GithubApi = retrofit.create(GithubApi::class.java)

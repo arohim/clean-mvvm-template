@@ -6,11 +6,13 @@ import com.cleanmvvm.domain.model.GithubRepository
 import io.reactivex.Single
 
 class GithubRemoteDataSourceImpl constructor(
-    private val api: GitHubApi
+    private val api: GithubApi
 ) : GithubRemoteDataSource {
 
-    override fun get(keyword: String): Single<GithubRepository> {
+    override fun get(keyword: String): Single<List<GithubRepository>> {
         return api.getRepositories(keyword)
-            .map { it.mapToDomain() }
+            .map {
+                it.items.map { it.mapToDomain() }
+            }
     }
 }
